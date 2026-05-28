@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Dimitrii Ziablikov — Senior Mobile Engineer. iOS, KMP, React Native. AI-augmented delivery, automated code review, 8+ years in fintech and consumer apps." />
+  <meta name="theme-color" content="#0a0e17" />
+  <title>Dimitrii Ziablikov · Senior Mobile Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="top" class="scroll-anchor" aria-hidden="true"></div>
+  <div class="bg-mesh" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <header class="header">
+    <nav class="nav container">
+      <a href="#top" class="logo">DZ</a>
+      <button class="nav-toggle" data-i18n-aria="nav.menu" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#about" data-i18n="nav.about">About</a></li>
+        <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+        <li><a href="#stack" data-i18n="nav.stack">Stack</a></li>
+        <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+        <li class="lang-switch" role="group" aria-label="Language">
+          <button type="button" class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+          <span class="lang-sep" aria-hidden="true">·</span>
+          <button type="button" class="lang-btn" data-lang="ru" aria-pressed="false">RU</button>
+        </li>
+        <li><a href="#contact" class="nav-cta" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-content">
+        <div class="hero-head reveal">
+          <p class="eyebrow" data-i18n="hero.eyebrow">Senior Mobile Engineer</p>
+          <div class="hero-name-row">
+            <figure class="hero-photo-wrap">
+              <img
+                class="hero-photo"
+                src="my-photo.jpeg"
+                alt="Dimitrii Ziablikov"
+                width="112"
+                height="112"
+                loading="eager"
+              />
+            </figure>
+            <h1 class="hero-title">
+              <span class="hero-name">Dimitrii</span>
+              <span class="hero-surname">Ziablikov</span>
+            </h1>
+          </div>
+        </div>
+        <p class="hero-lead reveal" data-i18n-html="hero.lead">
+          I build and ship mobile products — from <strong>native iOS</strong> at scale
+          to <strong>Kotlin Multiplatform</strong> and <strong>React Native</strong> startups.
+          Lead experience across architecture, mentoring, and product delivery.
+        </p>
+        <div class="hero-ai reveal">
+          <span class="hero-ai-icon" aria-hidden="true">✦</span>
+          <p data-i18n-html="hero.ai">
+            <strong>AI-augmented engineering</strong> — automated code review in CI, autotests and quality gates before merge,
+            review bots and static checks. LLM copilots (Cursor, agents) for faster day-to-day dev.
+          </p>
+        </div>
+        <div class="hero-actions reveal">
+          <div class="hero-cta-group">
+            <a href="Dimitrii-Ziablikov-CV.pdf" class="btn btn-cv" download="Dimitrii-Ziablikov-CV.pdf" data-i18n="hero.downloadCv">
+              Download CV
+            </a>
+            <a href="#projects" class="btn btn-ghost" data-i18n="hero.viewWork">View work</a>
+            <a href="#contact" class="btn btn-ghost" data-i18n="hero.contact">Contact</a>
+          </div>
+          <a href="https://zameni.app" class="hero-product" target="_blank" rel="noopener">
+            <span data-i18n="hero.productLabel">Product</span>
+            <span class="hero-product-name">zameni.app</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+          </a>
+        </div>
+        <div class="hero-stats reveal">
+          <div class="hero-stats-row hero-stats-row--values">
+            <span class="stat-value">8+</span>
+            <span class="stat-value stat-value--platforms">iOS · KMP · RN</span>
+            <span class="stat-value stat-value--ai" data-i18n="hero.statFocusValue">AI · DX</span>
+          </div>
+          <div class="hero-stats-row hero-stats-row--labels">
+            <span class="stat-label" data-i18n="hero.statYears">years mobile</span>
+            <span class="stat-label" data-i18n="hero.statStack">Stack</span>
+            <span class="stat-label" data-i18n="hero.statFocus">automation &amp; review</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual reveal" aria-hidden="true">
+        <div class="phone-mock">
+          <div class="phone-screen">
+            <div class="screen-bar"></div>
+            <div class="screen-card c1"></div>
+            <div class="screen-card c2"></div>
+            <div class="screen-card c3"></div>
+            <div class="screen-nav"></div>
+          </div>
+        </div>
+        <div class="orbit orbit-1"></div>
+        <div class="orbit orbit-2"></div>
+        <div class="float-tag tag-swift">Swift</div>
+        <div class="float-tag tag-kmp">KMP</div>
+        <div class="float-tag tag-rn">RN</div>
+        <div class="float-tag tag-ai">AI</div>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <div class="section-head reveal">
+        <span class="section-num">01</span>
+        <h2 data-i18n="about.title">About</h2>
+      </div>
+      <div class="about-grid">
+        <p class="about-text reveal" data-i18n-html="about.text">
+          Senior Mobile Engineer based in <strong>Almaty</strong>, with deep roots in
+          <strong>fintech</strong>, large-scale consumer apps, and startup products.
+          I own delivery end-to-end — roadmap, architecture, code, releases, and team growth.
+        </p>
+        <div class="pillars reveal">
+          <article class="pillar">
+            <div class="pillar-icon">◆</div>
+            <h3 data-i18n="about.pillar1Title">Lead &amp; mentor</h3>
+            <p data-i18n="about.pillar1Text">Interviews, onboarding, code reviews, architecture discussions, delivery ownership.</p>
+          </article>
+          <article class="pillar">
+            <div class="pillar-icon">◇</div>
+            <h3 data-i18n="about.pillar2Title">Architecture</h3>
+            <p data-i18n="about.pillar2Text">MVVM/Coordinator, Clean Architecture, TCA, modular apps, shared KMP layers.</p>
+          </article>
+          <article class="pillar">
+            <div class="pillar-icon">○</div>
+            <h3 data-i18n="about.pillar3Title">Design systems</h3>
+            <p data-i18n="about.pillar3Text">SwiftUI tokens &amp; components, navigation kits, reusable widget systems.</p>
+          </article>
+          <article class="pillar">
+            <div class="pillar-icon">▣</div>
+            <h3 data-i18n="about.pillar4Title">Full-stack mobile</h3>
+            <p data-i18n="about.pillar4Text">RN + NestJS/FastAPI, realtime, push, CI/CD, Docker, PostgreSQL.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section container">
+      <div class="section-head reveal">
+        <span class="section-num">02</span>
+        <h2 data-i18n="experience.title">Experience</h2>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item reveal">
+          <div class="timeline-meta">
+            <time data-i18n="experience.timeZameni">2025 — Present</time>
+            <span class="badge badge-live" data-i18n="experience.current">Current</span>
+          </div>
+          <h3>Zameni.app</h3>
+          <p class="role" data-i18n="experience.zameniRole">Fullstack Developer</p>
+          <ul>
+            <li data-i18n="experience.zameni1">Founded and shipped a startup from concept to production</li>
+            <li data-i18n="experience.zameni2">Owned roadmap, mobile app, and backend — iterated on user feedback</li>
+            <li data-i18n="experience.zameni3">Stack: React Native, NestJS, PostgreSQL, Socket.IO, Firebase</li>
+          </ul>
+          <a href="https://zameni.app" class="link-arrow" target="_blank" rel="noopener">zameni.app →</a>
+        </article>
+        <article class="timeline-item reveal">
+          <div class="timeline-meta"><time data-i18n="experience.timeRaif">2024 — 2025</time></div>
+          <h3>Raiffeisenbank</h3>
+          <p class="role" data-i18n="experience.raifRole">iOS Developer</p>
+          <ul>
+            <li data-i18n="experience.raif1">Retail banking features in a cross-functional product team</li>
+            <li data-i18n="experience.raif2">Home-screen redesign, Objective-C → Swift migration</li>
+            <li data-i18n="experience.raif3">Mentoring, interviews, onboarding, code reviews</li>
+          </ul>
+        </article>
+        <article class="timeline-item reveal">
+          <div class="timeline-meta"><time data-i18n="experience.timeVk">2022 — 2024</time></div>
+          <h3>VK Music</h3>
+          <p class="role" data-i18n="experience.vkRole">iOS Developer</p>
+          <ul>
+            <li data-i18n="experience.vk1">Music player redesign in a large-scale super-app</li>
+            <li data-i18n="experience.vk2">New modules and architecture-level contributions</li>
+          </ul>
+        </article>
+        <article class="timeline-item reveal">
+          <div class="timeline-meta"><time data-i18n="experience.timeEarly">2019 — 2022</time></div>
+          <h3>Startups · CRPT</h3>
+          <p class="role" data-i18n="experience.earlyRole">iOS Developer</p>
+          <ul>
+            <li data-i18n="experience.early1">Greenfield apps in consumer and regulated domains</li>
+            <li data-i18n="experience.early2">Architecture, CI/CD, cross-team collaboration</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="highlight-cards reveal">
+        <article class="highlight-card">
+          <h4 data-i18n="experience.kmpTitle">KMP in production</h4>
+          <p data-i18n="experience.kmpText">Multi-module shared layer for iOS/Android, Decompose, Ktor, XCFramework, Kover/Sonar gates.</p>
+        </article>
+        <article class="highlight-card">
+          <h4 data-i18n="experience.productTitle">Own product stack</h4>
+          <p data-i18n="experience.productText">Feed, chat, requests, favorites, push, realtime sync, localization, crash monitoring.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="stack" class="section section-stack container">
+      <div class="section-head reveal">
+        <span class="section-num">03</span>
+        <h2 data-i18n="stack.title">Tech radar</h2>
+        <p class="section-sub" data-i18n="stack.sub">Production stack across native, shared, and full-stack mobile delivery</p>
+      </div>
+
+      <div class="stack-meta reveal">
+        <p class="stack-intro" data-i18n="stack.intro">
+          8+ years shipping iOS at scale — KMP shared layers, React Native, and backend when needed.
+        </p>
+        <div class="stack-stats">
+          <span class="stack-pill"><b>iOS</b> · <span data-i18n="stack.statNative">Native</span></span>
+          <span class="stack-pill"><b>KMP · RN</b> · <span data-i18n="stack.statCross">Cross-platform</span></span>
+          <span class="stack-pill"><b>E2E</b> · <span data-i18n="stack.statDelivery">Delivery</span></span>
+          <span class="stack-pill stack-pill--ai"><b>AI</b> · <span data-i18n="stack.statAi">Automation</span></span>
+        </div>
+      </div>
+
+      <div class="stack-grid">
+        <article class="stack-card stack-card--ai reveal">
+          <header class="stack-card-head">
+            <span class="stack-icon" aria-hidden="true">✦</span>
+            <div>
+              <h3 data-i18n="stack.ai">AI &amp; Engineering Automation</h3>
+              <p class="stack-card-desc" data-i18n="stack.aiDesc">Automated review, CI autotests, and merge guardrails — LLM copilots where they add leverage</p>
+            </div>
+          </header>
+          <div class="tags">
+            <span class="tag-core">AI Code Review</span><span class="tag-core">CI Autotests</span><span class="tag-core">Quality Gates</span>
+            <span class="tag-core">Review Automation</span><span>Danger</span><span>Sonar</span>
+            <span>GitHub Actions</span><span>CI Bots</span><span>Cursor</span>
+            <span>LLM Copilots</span><span>Agents / MCP</span>
+          </div>
+        </article>
+
+        <article class="stack-card stack-card--ios reveal">
+          <header class="stack-card-head">
+            <span class="stack-icon" aria-hidden="true">◉</span>
+            <div>
+              <h3 data-i18n="stack.ios">iOS &amp; Native</h3>
+              <p class="stack-card-desc" data-i18n="stack.iosDesc">UIKit &amp; SwiftUI apps, media, persistence, legacy migration</p>
+            </div>
+          </header>
+          <div class="tags">
+            <span class="tag-core">Swift</span><span class="tag-core">SwiftUI</span><span class="tag-core">UIKit</span>
+            <span>Objective-C</span><span>Combine</span><span>Async/Await</span>
+            <span>Auto Layout</span><span>Core Data</span><span>AVFoundation</span>
+            <span>SPM</span><span>Xcode</span>
+          </div>
+        </article>
+
+        <article class="stack-card stack-card--cross reveal">
+          <header class="stack-card-head">
+            <span class="stack-icon" aria-hidden="true">◎</span>
+            <div>
+              <h3 data-i18n="stack.cross">Cross-platform</h3>
+              <p class="stack-card-desc" data-i18n="stack.crossDesc">Shared domain logic and multi-platform product delivery</p>
+            </div>
+          </header>
+          <div class="tags">
+            <span class="tag-core">Kotlin Multiplatform</span><span class="tag-core">React Native</span>
+            <span class="tag-core">TypeScript</span><span>Decompose</span><span>Ktor</span>
+            <span>XCFramework</span><span>Gradle</span><span>Metro</span>
+            <span>React Navigation</span><span>React Query</span>
+          </div>
+        </article>
+
+        <article class="stack-card stack-card--arch reveal">
+          <header class="stack-card-head">
+            <span class="stack-icon" aria-hidden="true">◇</span>
+            <div>
+              <h3 data-i18n="stack.arch">Architecture</h3>
+              <p class="stack-card-desc" data-i18n="stack.archDesc">Patterns for large teams, modular apps, and long-lived codebases</p>
+            </div>
+          </header>
+          <div class="tags">
+            <span class="tag-core">MVVM</span><span class="tag-core">Coordinator</span><span class="tag-core">Clean Architecture</span>
+            <span>MVP</span><span>TCA</span><span>Redux</span><span>MVI</span>
+            <span data-i18n="stack.modular">Modular apps</span><span>Deep Links</span>
+            <span>Design Systems</span><span>DI</span>
+          </div>
+        </article>
+
+        <article class="stack-card stack-card--backend reveal">
+          <header class="stack-card-head">
+            <span class="stack-icon" aria-hidden="true">▣</span>
+            <div>
+              <h3 data-i18n="stack.backend">Backend &amp; Data</h3>
+              <p class="stack-card-desc" data-i18n="stack.backendDesc">APIs, realtime, auth, and data layers for mobile products</p>
+            </div>
+          </header>
+          <div class="tags">
+            <span class="tag-core">NestJS</span><span class="tag-core">PostgreSQL</span><span class="tag-core">REST</span>
+            <span>Node.js</span><span>FastAPI</span><span>TypeORM</span>
+            <span>Socket.IO</span><span>JWT</span><span>Docker</span>
+            <span>GraphQL</span>
+          </div>
+        </article>
+
+        <article class="stack-card stack-card--quality reveal">
+          <header class="stack-card-head">
+            <span class="stack-icon" aria-hidden="true">✓</span>
+            <div>
+              <h3 data-i18n="stack.quality">Quality &amp; Delivery</h3>
+              <p class="stack-card-desc" data-i18n="stack.qualityDesc">Testing, CI/CD, codegen, and quality gates in real pipelines</p>
+            </div>
+          </header>
+          <div class="tags">
+            <span class="tag-core">Unit Testing</span><span class="tag-core">CI/CD</span><span class="tag-core">Code Review</span>
+            <span>Tuist</span><span>Fastlane</span><span>Kover</span>
+            <span>SonarQube</span><span>GitHub Actions</span><span data-i18n="stack.mentoring">Mentoring</span>
+          </div>
+        </article>
+
+        <article class="stack-card stack-card--platform reveal">
+          <header class="stack-card-head">
+            <span class="stack-icon" aria-hidden="true">◈</span>
+            <div>
+              <h3 data-i18n="stack.platform">Platform &amp; Services</h3>
+              <p class="stack-card-desc" data-i18n="stack.platformDesc">Push, analytics, crash reporting, and product integrations</p>
+            </div>
+          </header>
+          <div class="tags">
+            <span class="tag-core">Firebase</span><span>Crashlytics</span><span>FCM</span>
+            <span>Notifee</span><span>Push Notifications</span>
+            <span>Localization</span><span>Git</span><span>WebSockets</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!--
+      PROJECTS: manual allowlist of PUBLIC repos only.
+      Private repos (bdui-web, bdui-backend, zameni.bot, usn-online, nrboom, PLG) — never list here.
+      See PORTFOLIO.md for policy and full repo lists.
+    -->
+    <section id="projects" class="section container">
+      <div class="section-head reveal">
+        <span class="section-num">04</span>
+        <h2 data-i18n="projects.title">Selected work</h2>
+        <p class="section-sub" data-i18n="projects.sub">Selected public open source — private repos are not listed</p>
+      </div>
+
+      <h3 class="project-category reveal" data-i18n="projects.category">Design system &amp; architecture</h3>
+      <div class="projects-grid">
+        <a href="https://github.com/dimzfresh/DesignSystemKit" class="project-card reveal" target="_blank" rel="noopener">
+          <div class="project-top">
+            <span class="project-lang">Swift</span>
+            <svg class="project-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+          </div>
+          <h4>DesignSystemKit</h4>
+          <p data-i18n="projects.dsDesc">SwiftUI design system — tokens, components, consistent UI primitives.</p>
+        </a>
+        <a href="https://github.com/dimzfresh/NavigationKit" class="project-card reveal" target="_blank" rel="noopener">
+          <div class="project-top">
+            <span class="project-lang">Swift</span>
+            <svg class="project-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+          </div>
+          <h4>NavigationKit</h4>
+          <p data-i18n="projects.navDesc">Coordinator pattern + deep links for scalable app navigation.</p>
+        </a>
+        <a href="https://github.com/dimzfresh/WidgetSystemKit" class="project-card reveal" target="_blank" rel="noopener">
+          <div class="project-top">
+            <span class="project-lang">Swift</span>
+            <svg class="project-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+          </div>
+          <h4>WidgetSystemKit</h4>
+          <p data-i18n="projects.widgetDesc">Composable widget system for complex SwiftUI screens.</p>
+        </a>
+        <a href="https://github.com/dimzfresh/StoriesKit" class="project-card reveal" target="_blank" rel="noopener">
+          <div class="project-top">
+            <span class="project-lang">Swift</span>
+            <svg class="project-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+          </div>
+          <h4>StoriesKit</h4>
+          <p data-i18n="projects.storiesDesc">Stories-style media playback — evolution of StoriesApp.</p>
+        </a>
+      </div>
+
+      <p class="projects-note reveal" data-i18n="projects.note">
+        Only curated public repositories are shown. Private and internal work is not displayed on this page.
+      </p>
+    </section>
+
+    <section id="contact" class="section section-contact container">
+      <div class="contact-card reveal">
+        <p class="eyebrow" data-i18n="contact.eyebrow">Open to opportunities</p>
+        <h2 data-i18n="contact.title">Let's build something that ships.</h2>
+        <p class="contact-lead" data-i18n="contact.text">Senior mobile roles, architecture consulting, or product collaborations.</p>
+        <div class="contact-links">
+          <a href="mailto:dimzfresh@gmail.com" class="contact-link contact-link--primary">
+            <span class="contact-label" data-i18n="contact.email">Email</span>
+            <span class="contact-value">dimzfresh@gmail.com</span>
+          </a>
+          <a href="https://t.me/dimzfresh" class="contact-link contact-link--primary" target="_blank" rel="noopener">
+            <span class="contact-label" data-i18n="contact.telegram">Telegram</span>
+            <span class="contact-value">@dimzfresh</span>
+          </a>
+          <a href="Dimitrii-Ziablikov-CV.pdf" class="contact-link" download="Dimitrii-Ziablikov-CV.pdf">
+            <span class="contact-label" data-i18n="contact.cv">CV</span>
+            <span class="contact-value" data-i18n="contact.cvAction">Download PDF</span>
+          </a>
+          <a href="https://github.com/dimzfresh" class="contact-link" target="_blank" rel="noopener">
+            <span class="contact-label" data-i18n="contact.github">GitHub</span>
+            <span class="contact-value">@dimzfresh</span>
+          </a>
+          <a href="https://www.linkedin.com/in/dimzfresh" class="contact-link" target="_blank" rel="noopener">
+            <span class="contact-label" data-i18n="contact.linkedin">LinkedIn</span>
+            <span class="contact-value">dimzfresh</span>
+          </a>
+          <a href="https://zameni.app" class="contact-link" target="_blank" rel="noopener">
+            <span class="contact-label" data-i18n="contact.product">Product</span>
+            <span class="contact-value">zameni.app</span>
+          </a>
+        </div>
+      </div>
+      <aside class="education reveal">
+        <h3 data-i18n="contact.education">Education</h3>
+        <p data-i18n="contact.educationText">M.Sc. Applied Informatics — Saint Petersburg State University of Aerospace and Instrumentation</p>
+        <h3 data-i18n="contact.languages">Languages</h3>
+        <p data-i18n="contact.languagesText">Russian (native) · English (professional) · Spanish (basic)</p>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <p>© <span id="year"></span> Dimitrii Ziablikov</p>
+    <a href="#top" class="back-top" data-i18n="footer.backTop">Back to top ↑</a>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
